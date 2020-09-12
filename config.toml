@@ -1,0 +1,4 @@
+baseURL = "stridesprogramming.github.io"
+languageCode = "en-us"
+title = "Strides Programming Tips"
+theme = "tips"

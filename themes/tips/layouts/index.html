@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="contain tc">
+    {{.Content}}
+    {{ range .Sections }}
+        <div class="tl">
+            <ul>
+            {{ range .Pages }}
+                <li>
+                    <a href="{{.Permalink}}">{{.Title}} | {{.Date.Format "2006-01"}}</a>
+                </li>
+            {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+</main>
+{{ end }}

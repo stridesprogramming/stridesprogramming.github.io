@@ -1,0 +1,85 @@
+body {
+    background-color: lightblue;
+    font-family: 'Baloo Tamma';
+    font-size: 18px;
+    overflow-x: hidden;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.header-list {
+    list-style: none;
+}
+
+.icon {
+    height: 2em;
+    width: 2em;
+    margin: .5em;
+}
+
+.title-big {
+    font-size: 60px;
+}
+
+.title-small {
+    font-size: 20px;
+}
+
+.contain {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+footer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-list > span {
+    visibility: none;
+}
+
+@media only screen and (min-width: 400px) {
+    body { 
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body { 
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    body { 
+        font-size: 30px;
+    }
+}
