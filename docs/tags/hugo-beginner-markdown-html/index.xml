@@ -6,7 +6,11 @@
     <description>Recent content in hugo, beginner, markdown, html on Strides Programming Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2020 21:42:52 -0500</lastBuildDate><atom:link href="stridesprogramming.github.io/tags/hugo-beginner-markdown-html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Sep 2020 21:42:52 -0500</lastBuildDate>
+    
+	<atom:link href="stridesprogramming.github.io/tags/hugo-beginner-markdown-html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Making a Home Page With Hugo</title>
       <link>stridesprogramming.github.io/tips/making-a-homepage-with-hugo/</link>
