@@ -1,4 +1,4 @@
-# Strides Programming Tips
+# [Strides Programming Tips](stridesprogramming.github.io)
 Tips articles about various programming, content creation, and general livability articles.
 
 ## Usage
