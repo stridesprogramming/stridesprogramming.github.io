@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>stridesprogramming.github.io/categories/</loc>
+    <lastmod>2020-09-25T20:06:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>stridesprogramming.github.io/tips/fastest-hugo-setup-making-a-theme/</loc>
+    <lastmod>2020-09-25T20:06:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>stridesprogramming.github.io/tags/hugo-markdown-html-go-css/</loc>
+    <lastmod>2020-09-25T20:06:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>stridesprogramming.github.io/tags/</loc>
+    <lastmod>2020-09-25T20:06:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>stridesprogramming.github.io/categories/tech/</loc>
+    <lastmod>2020-09-25T20:06:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>stridesprogramming.github.io/tips/hugo-fast-start-making-a-theme/</loc>
+    <lastmod>2020-09-12T10:26:18-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>stridesprogramming.github.io/tips/</loc>
     <lastmod>2020-09-08T22:41:26-05:00</lastmod>
   </url>
@@ -13,27 +43,12 @@
   </url>
   
   <url>
-    <loc>stridesprogramming.github.io/categories/</loc>
+    <loc>stridesprogramming.github.io/tags/hugo-beginner-markdown-html/</loc>
     <lastmod>2020-09-08T21:42:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>stridesprogramming.github.io/tips/getting-started-with-hugo/</loc>
-    <lastmod>2020-09-08T21:42:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>stridesprogramming.github.io/tags/hugo-beginning/</loc>
-    <lastmod>2020-09-08T21:42:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>stridesprogramming.github.io/categories/hugo-through/</loc>
-    <lastmod>2020-09-08T21:42:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>stridesprogramming.github.io/tags/</loc>
+    <loc>stridesprogramming.github.io/tips/making-a-homepage-with-hugo/</loc>
     <lastmod>2020-09-08T21:42:52-05:00</lastmod>
   </url>
   

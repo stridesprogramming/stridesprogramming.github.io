@@ -5,7 +5,7 @@
     <meta name="keywords" content="Hugo, HTML, CSS, JavaScript, Personal Growth, Tutorial.">
     <meta name="author" content="Strides Programming">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags</title>
+    <title>Fastest Custom Hugo Setup, Building a Theme</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma">
     
     <link rel="stylesheet" href="/stridesprogramming.github.io/css/main.css">
@@ -35,25 +35,82 @@
         </li>
     </ul>
 </header>
-<main class="contain">
-    <article>
-        <header>
-            <h1>Tags</h1>
-        </header>
-        
-    </article>
-    <ul>
-    
-        <li>
-            <a href="stridesprogramming.github.io/tags/hugo-markdown-html-go-css/">2020-09-25 | hugo, markdown, html, go, css</a>
-        </li>
-    
-        <li>
-            <a href="stridesprogramming.github.io/tags/hugo-beginner-markdown-html/">2020-09-08 | hugo, beginner, markdown, html</a>
-        </li>
-    
-    </ul>
-</main>
+<div class="contain">
+    <h1>Fastest Custom Hugo Setup, Building a Theme</h1>
+    <h2 id="orienting-for-speed">Orienting for Speed</h2>
+<p><a href="https://gohugo.io/">Hugo</a> is a way to write an HTML website using the <a href="https://golang.org/">Go</a> programming language. It&rsquo;s nice, because you use lots of <a href="https://www.w3schools.com/html/html_intro.asp">HTML</a> and a little Go. The fastest way to build a custom Hugo site is starting your own theme.</p>
+<h2 id="command-line-activate-theme">Command Line, Activate Theme</h2>
+<p>Open your terminal, check your installation and version of Hugo, and let&rsquo;s run some commands. You can rename the last word of these, they use silly placeholder names.</p>
+<pre><code># if you have a site, skip this
+hugo new site best-website-ever
+# move into the project directory
+cd best-website-ever
+hugo new theme theme-time-now
+</code></pre><h3 id="outcome">Outcome</h3>
+<p>Look at the new files with <code>ls themes/theme-time-now</code>. The file structure is similar to a <code>hugo new site</code> command.</p>
+<h3 id="differences">Differences</h3>
+<p>There is no <code>content</code>, and some default <code>layouts</code> and <code>partials</code> have been created to kickstart your custom theme. Woo!</p>
+<h3 id="make-the-theme-appear">Make The Theme Appear</h3>
+<p>Your website hasn&rsquo;t heard about your theme yet. Tell your site by editing <code>config.toml</code> in the <code>best-website-ever</code> folder. Add this line: <code>theme = &quot;theme-time-now&quot;</code> and save.</p>
+<h2 id="wiring-components-together">Wiring Components Together</h2>
+<p>All code described from here is inside <code>best-website-ever/themes/theme-time-now/layouts/</code>.</p>
+<h3 id="theme-layouts">Theme Layouts</h3>
+<p>To hook your pages to the <code>_default/_baseof.html</code> layout, use this Go code.</p>
+<pre><code>{{- define &quot;main&quot; }}
+{{- end }}
+</code></pre><p>To jump start your homepage, add it to <code>index.html</code>. You can also add it to <code>_default/list.html</code> and <code>_default/single.html</code>. These files are two primary categories for your content.</p>
+<h3 id="filling-out-main">Filling Out Main</h3>
+<p>When building your site, Hugo will convert any Go code in a <code>.html</code> file into HTML. Open <code>index.html</code> again and write something like this.</p>
+<pre><code>{{- define &quot;main&quot; }}
+    &lt;div&gt;
+        {{ .Title }}
+    &lt;/div&gt;
+    &lt;div&gt;It's Home!&lt;/div&gt;
+{{- end }}
+</code></pre><p>You can sprinkle in Go wherever you need by using the <code>{{}}</code> double curly braces, and you can choose to write HTML all day.</p>
+<h3 id="partials-hold-best-practices">Partials Hold Best Practices</h3>
+<p>Inside the <code>_default/_baseof.html</code> file is a HTML skeleton and partials for <code>head</code>, <code>header</code>, and <code>footer</code>. Static HTML sites do best when they are well planned. Apply best practices to your website now, starting with the <code>head</code> partial. Check tools like <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> and <a href="https://webaim.org/">WebAIM</a> regularly to maintain high usability for your site.</p>
+<h2 id="partials-every-website-needs">Partials Every Website Needs</h2>
+<h3 id="inside-the-head">Inside the Head</h3>
+<p>It&rsquo;s helpful to know every element a <code>&lt;head&gt;</code> <a href="https://www.w3schools.com/html/html_head.asp_">tag</a> can contain. Many are important for search engines. It&rsquo;s early in the <code>&lt;html&gt;</code> document, and search engines can load this without accidentally downloading every image on the world wide web. Try to make sure your head partial contains these elements!</p>
+<ol>
+<li>A title tag. To make it unique for every page, we use some Hugo code.</li>
+<li>Several <code>meta</code> tags with different <code>name</code> attributes.
+<ul>
+<li><code>viewport</code> Helps you <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">look good</a> on phones.</li>
+<li><code>keywords</code> Set your search engine keywords, be accurate and concise. Keep it under a dozen words.</li>
+<li><code>description</code> Write a sentence that describes your page well.</li>
+</ul>
+</li>
+<li>Some CSS. We can use Hugo to process the CSS file before it&rsquo;s sent out for users.
+<ul>
+<li>You have to build a special home for this file, in <code>best-website-ever/themes/theme-time-now/assets/main.css</code>. Create this file (and <code>asset</code> folder) to apply CSS style.</li>
+</ul>
+</li>
+</ol>
+<pre><code>&lt;head&gt;
+    &lt;title&gt;{{ .Title }} | {{ .Site.Title }}&lt;title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=0&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;I want to be searched, engine.&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;My Interests, Growth, Happiness&quot;&gt;
+    {{ $style := resources.Get &quot;css/main.css&quot; }}
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ $style.RelPermalink }}&gt;
+&lt;/head&gt;
+</code></pre><h3 id="taking-on-the-header">Taking on the Header</h3>
+<p>A header is visible to most visitors on most pages. This is a final moment to take a breath and carefully plan your website. Decide what to share, what to highlight, how to invite feedback, and examine any  personal information you&rsquo;re making public.</p>
+<p>A common choice is to make the header a <a href="https://www.w3schools.com/css/css_navbar.asp">navigation system</a> to highlight the most important ideas and links.</p>
+<p>This is a <code>.html</code> file, so you can start very simple, in <code>best-website-ever/themes/theme-time-now/layouts/partial/header.html</code> add:</p>
+<pre><code>&lt;div&gt;
+    It's header time.
+&lt;/div&gt;
+</code></pre><h3 id="what-to-footer">What to Footer</h3>
+<p>Footers can contain stuff you want on every page, but don&rsquo;t need to highlight. JavaScript that can run whenever, copyrights, and contact information are common. Check out the <a href="https://gohugo.io/templates/partials/#example-footerhtml">Hugo documentation</a> for a good example! You could also build a beautiful soundscape bounding over the whole website landscape. I believe in you.</p>
+<h2 id="checking-our-work">Checking Our Work</h2>
+<p>At any time, you can run <code>hugo server</code> and check the your progress by opening <a href="http://localhost:1313/">localhost:1313</a> in your browser.</p>
+<h2 id="goodbye">Goodbye</h2>
+<p>With the theme skeleton, you get homepage, list page, and single page layouts. You get partials for a solid HTML skeleton, and a 404 page. Good start!</p>
+
+</div>
 <footer class="contain flex justify-around">
     <a href="https://twitter.com/StridesP">Strides Programming</a>
 </footer></body>

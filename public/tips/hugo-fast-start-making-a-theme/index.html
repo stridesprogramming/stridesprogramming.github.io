@@ -5,7 +5,7 @@
     <meta name="keywords" content="Hugo, HTML, CSS, JavaScript, Personal Growth, Tutorial.">
     <meta name="author" content="Strides Programming">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags</title>
+    <title>Hugo Fastest Custom Start, Making A Theme</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma">
     
     <link rel="stylesheet" href="/stridesprogramming.github.io/css/main.css">
@@ -35,25 +35,29 @@
         </li>
     </ul>
 </header>
-<main class="contain">
-    <article>
-        <header>
-            <h1>Tags</h1>
-        </header>
-        
-    </article>
-    <ul>
-    
-        <li>
-            <a href="stridesprogramming.github.io/tags/hugo-markdown-html-go-css/">2020-09-25 | hugo, markdown, html, go, css</a>
-        </li>
-    
-        <li>
-            <a href="stridesprogramming.github.io/tags/hugo-beginner-markdown-html/">2020-09-08 | hugo, beginner, markdown, html</a>
-        </li>
-    
-    </ul>
-</main>
+<div class="contain">
+    <h1>Hugo Fastest Custom Start, Making A Theme</h1>
+    <h2 id="getting-set-up">Getting Set Up</h2>
+<p>You&rsquo;ve installed Hugo, run <code>hugo new site best-website</code> and want to make a new custom website from scratch. It&rsquo;s a great learning experience to step through each file type you can make, but if you already understand page leafs and bundles, and are familiar with the lookup order, getting started fast also becomes essential.</p>
+<h2 id="starting-a-theme-in-hugo">Starting a Theme in Hugo</h2>
+<p>The fastest way to scaffold out a new Hugo site is to start your site in a theme. The <code>hugo new theme best-theme</code> is a gem in the Hugo code base. This command creates many of the files you need to see a complete site.</p>
+<p>There is some overlap with the <code>hugo new site</code> command, this also creates an <code>best-website/theme/best-theme/archetypes/default.md</code> file and a .toml file for storing configurations, with a new themed named: <code>theme.toml</code>.</p>
+<h2 id="theme-created-layouts">Theme Created Layouts</h2>
+<p>This command also creates 8 essential files that appear in almost every well organized Hugo Theme.</p>
+<ul>
+<li>404.html</li>
+<li>_default/baseof.html</li>
+<li>_default/list.html</li>
+<li>_default/single.html</li>
+<li>index.html</li>
+<li>partials/footer.html</li>
+<li>partials/head.html</li>
+<li>partials/header.html</li>
+</ul>
+<h2 id="where-to-put-content">Where To Put Content</h2>
+<p>Content normally doens&rsquo;t make much sense in a theme file. A theme is great for holding reuasable components that create visual effects, or set the flow of different pages. It doesn&rsquo;t make sense to put much content in reusable place, because the content Keep content files in your project directory.</p>
+
+</div>
 <footer class="contain flex justify-around">
     <a href="https://twitter.com/StridesP">Strides Programming</a>
 </footer></body>

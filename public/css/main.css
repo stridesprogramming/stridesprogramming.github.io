@@ -1,8 +1,31 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background-color: lightblue;
-    font-family: 'Baloo Tamma';
     font-size: 18px;
-    overflow-x: hidden;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    overflow-x: hidden;  
+    font-family: sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+}
+
+header, footer {
+    font-family: 'Baloo Tamma';
+    font-size: 20px;
+}
+
+header {
+    display: block;
+}
+
+header ul {
+    padding-left: 0;
+}
+
+main {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .flex {
@@ -13,8 +36,8 @@ body {
     align-items: center;
 }
 
-.justify-between {
-    justify-content: space-between;
+.justify-around {
+    justify-content: space-around;
 }
 
 .dib {
@@ -23,12 +46,6 @@ body {
 
 .header-list {
     list-style: none;
-}
-
-.icon {
-    height: 2em;
-    width: 2em;
-    margin: .5em;
 }
 
 .title-big {
@@ -66,9 +83,27 @@ img {
     visibility: none;
 }
 
-@media only screen and (min-width: 400px) {
+.icon {
+    height: 2em;
+    width: 2em;
+    padding: .25rem;
+}
+
+.icon-list {
+    display: block;
+}
+
+@media only screen and (min-width: 401px) {
     body { 
+        font-size: 20px;
+    }
+
+    header, footer { 
         font-size: 22px;
+    }
+
+    .icon-list {
+        display: flex;
     }
 }
 
@@ -76,10 +111,30 @@ img {
     body { 
         font-size: 26px;
     }
+
+    header, footer { 
+        font-size: 30px;
+    }
+    
+    .icon {
+        height: 3em;
+        width: 3em;
+        padding: .5rem;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
     body { 
         font-size: 30px;
+    }
+
+    header, footer { 
+        font-size: 32px;
+    }
+    
+    .icon {
+        height: 3em;
+        width: 3em;
+        padding: 1rem;
     }
 }
