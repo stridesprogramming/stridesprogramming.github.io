@@ -1,5 +1,5 @@
 ---
-title: "Fastest Custom Hugo Setup, Building a Theme"
+title: "Hugo Fastest Custom Setup, Building a Theme"
 date: 2020-09-25T20:06:44-05:00
 tags: hugo, markdown, html, go, css
 categories: tech

@@ -1,5 +1,5 @@
 ---
-title: "Making a Home Page With Hugo"
+title: "Making a Hugo Homepage"
 date: 2020-09-08T21:42:52-05:00
 tags: hugo, beginner, markdown, html
 categories: tech
@@ -23,12 +23,11 @@ There is nothing there but an empty HTML page.
 
 {{< figure src="Change-Directory-into-Hugo-Project,-Run-Hugo-Server,-Examine-Errors.png" caption="Change Directory into Hugo Project, Run Hugo Server" >}}
 
-## Seeing Home
+## Fill In An Empty Homepage
 
-To make a home page interesting, you have to include your own layouts. Make a home page layout the fancy way with `echo "<div>Best</div>" > layouts/home.html`. Or be relaxed and make a text file named `home.html` in the `layouts` directory (in the `best-website` directory) and write HTML in there.
+To make a home page appear, you have to include your own layouts. In Hugo, the home page lives in `layouts/index.html`. This file holds a mixture of HTML and Go code. Make a home page layout the fancy way with `echo "<div>Best</div>" > layouts/index.html`. Or be relaxed and make a text file named `index.html` in the `layouts` directory (in the `best-website` directory) and write HTML in there.
 
-Know More!
-You could name this file many things. Anything in the [lookup order](https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-home-page) for a `home` page works.
+You could name the home page file many things. Anything in the Hugo [lookup order](https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-home-page) for a `home` page works.
 
 ## Seeing Content
 
@@ -40,6 +39,6 @@ Know More!
 Hugo encourages you to put the HTML the browser uses in `layouts` and populate it with content the user sees from `content`.
 
 ## Wrapping Up
-You have a Hugo homepage with Markdown content that gets added to an HTML layout. Go wild, and if you want to understand other page types, come back soon!
+You have a Hugo homepage with Markdown content that gets added to an HTML layout. Edit either file to go wild with your home page!
 
 
