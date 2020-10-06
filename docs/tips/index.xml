@@ -6,7 +6,11 @@
     <description>Recent content in Tips on Strides Programming Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2020 22:41:26 -0500</lastBuildDate><atom:link href="stridesprogramming.github.io/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Sep 2020 22:41:26 -0500</lastBuildDate>
+    
+	<atom:link href="stridesprogramming.github.io/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Fastest Custom Hugo Setup, Building a Theme</title>
       <link>stridesprogramming.github.io/tips/fastest-hugo-setup-making-a-theme/</link>
