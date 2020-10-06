@@ -8,7 +8,7 @@
     <title>Making a Hugo Homepage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma">
     
-    <link rel="stylesheet" href="/stridesprogramming.com/css/main.css">
+    <link rel="stylesheet" href="/stridesprogramming.com/css/main.min.css">
 </head>
     <body><header class="contain flex align-center justify-around">
     <div>
@@ -65,8 +65,7 @@
 <h2 id="seeing-content">Seeing Content</h2>
 <p>If you stopped and restarted your server with <code>Ctrl-C</code>, then <code>hugo server</code> you could see that we removed one error. Our home page has a template, and you could add anything you wanted here. However, Hugo has some good suggestions about how to organize your information.</p>
 <p>In your <code>layouts/home.html</code> you&rsquo;ll use Go code to read variables and content from other files. Replace &ldquo;Best&rdquo; with <code>{{ .Content }}</code>. The <code>{{}}</code> curly braces indicate Go code is happening, the <code>.</code> is all the information currently available, and the <code>Content</code> is a specific variable carrying data. If you look at localhost:1313, you&rsquo;ll see no content. To add content for the home page make the <code>content/_index.md</code> file and add some markdown, like <code># *Best* Website Ever</code>.</p>
-<p>Know More!
-Hugo encourages you to put the HTML the browser uses in <code>layouts</code> and populate it with content the user sees from <code>content</code>.</p>
+<p>Hugo encourages you to put the HTML the browser uses in <code>layouts</code> and populate it with the words the user sees from <code>content</code>.</p>
 <h2 id="wrapping-up">Wrapping Up</h2>
 <p>You have a Hugo homepage with Markdown content that gets added to an HTML layout. Edit either file to go wild with your home page!</p>
 
