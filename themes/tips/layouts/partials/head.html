@@ -7,5 +7,5 @@
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma">
     {{ $style := resources.Get "css/main.css" | minify }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
