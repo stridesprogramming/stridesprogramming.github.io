@@ -35,8 +35,7 @@ If you stopped and restarted your server with `Ctrl-C`, then `hugo server` you c
 
 In your `layouts/home.html` you'll use Go code to read variables and content from other files. Replace "Best" with `{{ .Content }}`. The `{{}}` curly braces indicate Go code is happening, the `.` is all the information currently available, and the `Content` is a specific variable carrying data. If you look at localhost:1313, you'll see no content. To add content for the home page make the `content/_index.md` file and add some markdown, like `# *Best* Website Ever`.
 
-Know More!
-Hugo encourages you to put the HTML the browser uses in `layouts` and populate it with content the user sees from `content`.
+Hugo encourages you to put the HTML the browser uses in `layouts` and populate it with the words the user sees from `content`.
 
 ## Wrapping Up
 You have a Hugo homepage with Markdown content that gets added to an HTML layout. Edit either file to go wild with your home page!
