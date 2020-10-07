@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{- define "main" }}
 <main class="contain">
     <article>
         <header>
@@ -7,11 +7,11 @@
         {{.Content}}
     </article>
     <ul>
-    {{ range .Pages }}
+    {{- range .Pages }}
         <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+            <a href="{{ .Permalink }}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
         </li>
-    {{ end }}
+    {{- end }}
     </ul>
 </main>
-{{ end }}
+{{- end }}

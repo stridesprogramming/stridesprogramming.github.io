@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Strides Programming Tips</title>
-    <link>stridesprogramming.com/tags/</link>
+    <link>https://stridesprogramming.com/tags/</link>
     <description>Recent content in Tags on Strides Programming Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2020 20:06:44 -0500</lastBuildDate><atom:link href="stridesprogramming.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2020 20:06:44 -0500</lastBuildDate><atom:link href="https://stridesprogramming.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo, markdown, html, go, css</title>
-      <link>stridesprogramming.com/tags/hugo-markdown-html-go-css/</link>
+      <link>https://stridesprogramming.com/tags/hugo-markdown-html-go-css/</link>
       <pubDate>Fri, 25 Sep 2020 20:06:44 -0500</pubDate>
       
-      <guid>stridesprogramming.com/tags/hugo-markdown-html-go-css/</guid>
+      <guid>https://stridesprogramming.com/tags/hugo-markdown-html-go-css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo, beginner, markdown, html</title>
-      <link>stridesprogramming.com/tags/hugo-beginner-markdown-html/</link>
+      <link>https://stridesprogramming.com/tags/hugo-beginner-markdown-html/</link>
       <pubDate>Tue, 08 Sep 2020 21:42:52 -0500</pubDate>
       
-      <guid>stridesprogramming.com/tags/hugo-beginner-markdown-html/</guid>
+      <guid>https://stridesprogramming.com/tags/hugo-beginner-markdown-html/</guid>
       <description></description>
     </item>
     
