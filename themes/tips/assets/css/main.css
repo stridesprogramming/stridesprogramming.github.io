@@ -1,8 +1,8 @@
 :root {
     --background: lightblue;
     --dark:  black;
-    --primary: #e6ad;
-    --link-hover-bg: #777;
+    --primary: azure;
+    --link-hover-bg:cornflowerblue;
     --home-hover: var(--primary);
     --twitter-hover: rgba(29,161,242,1.00);
     --contact-hover: green;
