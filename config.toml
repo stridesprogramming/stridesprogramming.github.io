@@ -1,5 +1,5 @@
 baseURL = "stridesprogramming.com"
 languageCode = "en-us"
-title = "Strides Programming Tips"
+title = "Tough Pixels Tips"
 theme = "tips"
 publishDir = "docs"
