@@ -14,6 +14,7 @@ a:hover, a:focus {
     color: var(--primary);
     background: var(--link-hover-bg);
     outline: none;
+    border-radius: .2rem;
 }
 .title-big:hover,
 .title-big:focus {
