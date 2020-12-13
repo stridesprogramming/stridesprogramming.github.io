@@ -5,7 +5,7 @@
     <meta name="keywords" content="Hugo, HTML, CSS, JavaScript, Personal Growth, Tutorial.">
     <meta name="author" content="Strides Programming">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Making a Hugo Homepage</title>
+    <title>SCSS, SASS, CSS, iFrames, Responsive Sites</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tamma">
     <link rel="stylesheet" href="https://stridesprogramming.com/css/main.min.31758d7b489412ca0f94bb29a21f2890f8fa7149aad51bd7aa98427818f543e1.css">
 </head>
@@ -35,42 +35,19 @@
         </li>
     </ul>
 </header>
-<div class="contain">
-    <h1>Making a Hugo Homepage</h1>
-    <div>Reading time: 3 minutes (433 words)</div>
-    <h2 id="taking-inventory">Taking Inventory</h2>
-<p>Do you know how to use the terminal?  If you don&rsquo;t, <a href="https://www.learnenough.com/command-line-tutorial/basics">start here</a>.</p>
-<p>The first step in the installation process is noting what software is already  installed. I&rsquo;m running Linux (an operating system, specifically Ubuntu 18.04) and have Hugo (0.74.3) installed. If you don&rsquo;t have Hugo, follow their <a href="https://gohugo.io/getting-started/installing">installation instructions</a>. With Hugo installed, run <code>hugo new site best-website</code> in the terminal.</p>
-<figure>
-    <img src="Lookup-Operating-System-Version,-Lookup-Hugo-Version,-Create-Hugo-New-Site.png"
-         alt="Lookup Operating System Version, Lookup Hugo Version, Create Hugo New Site"/> <figcaption>
-            <p>Lookup Operating System Version, Lookup Hugo Version, Create Hugo New Site</p>
-        </figcaption>
-</figure>
-
-<p>This commands generates a folder structure (run <code>ls</code> in the terminal to see!), and two files. <code>config.toml</code> is an important file, it sets variables any page can access.</p>
-<h2 id="seeing-html">Seeing HTML</h2>
-<p>The first command is running the server, this generates HTML for your web browser to read. Move into the correct directory with <code>cd best-website</code> and run <code>hugo server</code>.  This generates warnings in the terminal, and you should be able to open a web browser at <a href="http://localhost:1313/">http://localhost:1313/</a>.</p>
-<p>There is nothing there but an empty HTML page.</p>
-<figure>
-    <img src="Change-Directory-into-Hugo-Project,-Run-Hugo-Server,-Examine-Errors.png"
-         alt="Change Directory into Hugo Project, Run Hugo Server"/> <figcaption>
-            <p>Change Directory into Hugo Project, Run Hugo Server</p>
-        </figcaption>
-</figure>
-
-<h2 id="fill-in-an-empty-homepage">Fill In An Empty Homepage</h2>
-<p>To make a home page appear, you have to include your own layouts. In Hugo, the home page lives in <code>layouts/index.html</code>. This file holds a mixture of HTML and Go code. Make a home page layout the fancy way with <code>echo &quot;&lt;div&gt;Best&lt;/div&gt;&quot; &gt; layouts/index.html</code>. Or be relaxed and make a text file named <code>index.html</code> in the <code>layouts</code> directory (in the <code>best-website</code> directory) and write HTML in there.</p>
-<p>You could name the home page file many things. Anything in the Hugo <a href="https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-home-page">lookup order</a> for a <code>home</code> page works.</p>
-<h2 id="seeing-content">Seeing Content</h2>
-<p>If you stopped and restarted your server with <code>Ctrl-C</code>, then <code>hugo server</code> you could see that we removed one error. Our home page has a template, and you could add anything you wanted here. However, Hugo has some good suggestions about how to organize your information.</p>
-<p>In your <code>layouts/home.html</code> you&rsquo;ll use Go code to read variables and content from other files. Replace &ldquo;Best&rdquo; with <code>{{ .Content }}</code>. The <code>{{}}</code> curly braces indicate Go code is happening, the <code>.</code> is all the information currently available, and the <code>Content</code> is a specific variable carrying data. If you look at localhost:1313, you&rsquo;ll see no content. To add content for the home page make the <code>content/_index.md</code> file and add some markdown, like <code># *Best* Website Ever</code>.</p>
-<p>Hugo encourages you to put the HTML the browser uses in <code>layouts</code> and populate it with the words the user sees from <code>content</code>.</p>
-<h2 id="wrapping-up">Wrapping Up</h2>
-<p>You have a Hugo homepage with Markdown content that gets added to an HTML layout. Edit either file to go wild with your home page!</p>
-
-</div>
-<footer class="contain flex justify-around">
+<main class="contain">
+    <article>
+        <header>
+            <h1>SCSS, SASS, CSS, iFrames, Responsive Sites</h1>
+        </header>
+        
+    </article>
+    <ul>
+        <li>
+            <a href="https://stridesprogramming.com/tips/creating-responsive-iframes/">2020-11-17 | Creating Responsive iFrames</a>
+        </li>
+    </ul>
+</main><footer class="contain flex justify-around">
     <a href="https://twitter.com/StridesP">Strides Programming</a>
 </footer>
     </body>

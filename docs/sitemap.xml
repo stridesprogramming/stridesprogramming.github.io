@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://stridesprogramming.com/tips/creating-responsive-iframes/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stridesprogramming.com/tags/scss-sass-css-iframes-responsive-sites/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stridesprogramming.com/tags/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://stridesprogramming.com/categories/</loc>
     <lastmod>2020-09-25T20:06:44-05:00</lastmod>
   </url>
@@ -14,11 +29,6 @@
   
   <url>
     <loc>https://stridesprogramming.com/tags/hugo-markdown-html-go-css/</loc>
-    <lastmod>2020-09-25T20:06:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://stridesprogramming.com/tags/</loc>
     <lastmod>2020-09-25T20:06:44-05:00</lastmod>
   </url>
   
