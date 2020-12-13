@@ -16,5 +16,10 @@ To deploy your code, first push the changes you've made to the Hugo project, the
 rm -rf docs
 hugo
 git add .
+git commit -am "MY CHANGE"
 git push
+
+# To send changes to stridesprogramming.github.io
+./deploy.sh "Your optional commit message" 
+
 ```
