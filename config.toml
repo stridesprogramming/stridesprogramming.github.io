@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "Tough Pixels Tips"
 theme = "tips"
 publishDir = "docs"
+[params]
+    description = "Strides Programming tips, simple explanations for coding problems."
+    author = "Strides Programming"

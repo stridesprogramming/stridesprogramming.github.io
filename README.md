@@ -18,8 +18,4 @@ hugo
 git add .
 git commit -am "MY CHANGE"
 git push
-
-# To send changes to stridesprogramming.github.io
-./deploy.sh "Your optional commit message" 
-
 ```
