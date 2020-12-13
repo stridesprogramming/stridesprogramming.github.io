@@ -1,4 +1,4 @@
-baseURL = "stridesprogramming.com"
+baseURL = "https://stridesprogramming.com"
 languageCode = "en-us"
 title = "Tough Pixels Tips"
 theme = "tips"
