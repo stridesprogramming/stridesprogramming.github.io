@@ -5,7 +5,6 @@
     --link-hover-bg: #2D6FE7;
     --home-hover: var(--primary);
     --twitter-hover: rgba(29,161,242,1.00);
-    --contact-hover: green;
 }
 a {
     color: inherit;
@@ -30,13 +29,14 @@ a:hover, a:focus {
 .footer-nav-icon.home:hover {
     color: var(--home-hover);
 }
+
 .footer-nav-icon.twitter:focus,
-.footer-nav-icon.twiter:hover {
+.footer-nav-icon.twitter:hover {
     color: var(--twitter-hover);
 }
 .footer-nav-icon.contact:focus,
 .footer-nav-icon.contact:hover {
-    color: var(--contact-hover);
+    color: var(--background);
 }
 .skip-link, 
 .sr-only {
