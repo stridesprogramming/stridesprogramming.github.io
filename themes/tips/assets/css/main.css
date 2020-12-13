@@ -37,7 +37,25 @@ a:hover, a:focus {
 .footer-nav-icon.contact:hover {
     color: var(--contact-hover);
 }
-
+.skip-link, 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: inherit;
+}
 
 body, html {
     height: 100%;
